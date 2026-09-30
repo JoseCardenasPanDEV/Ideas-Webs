@@ -1,0 +1,349 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Playfair Display', serif;
+}
+
+/*Navbar*/
+
+.navbar{
+    background-color: #000;
+    color: #fff;
+    width: 100%;
+    height: 80px;   
+}
+
+.navbar-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+    gap: 20px;
+}
+
+.navbar-list{
+    display: flex;
+    gap: 30px;
+    color: #aaa;
+}
+
+.navbar-list li{
+    list-style: none;
+    font-size: 20px;
+}
+
+.navbar-container a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+/*main*/
+
+
+
+
+
+
+/* Forzar que el carrusel cubra exactamente el ancho del viewport */
+.carousel-container-full {
+    position: relative;
+    width: 100vw;
+    height: 70vh; /* Altura ajustable del banner (puedes cambiarla a 100vh si quieres pantalla completa) */
+    margin-left: calc(-50vw + 50%);
+    margin-right: calc(-50vw + 50%);
+    overflow: hidden;
+    background-color: #000;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+/* Pista que alinea las imágenes horizontalmente */
+.carousel-track {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s ease-in-out;
+    will-change: transform;
+}
+
+/* Cada elemento ocupa el 100% del ancho del viewport */
+.carousel-item {
+    min-width: 100vw;
+    height: 100%;
+    margin: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Ajuste perfecto de la imagen sin deformarse */
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Botones de control estilo Bootstrap Carousel */
+.carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 10;
+    transition: background-color 0.15s ease-in-out, opacity 0.15s ease-in-out;
+    opacity: 0.5;
+}
+
+.carousel-control:hover {
+    background: rgba(0, 0, 0, 0.8);
+    opacity: 1;
+}
+
+.carousel-control.prev {
+    left: 1.5rem;
+}
+
+.carousel-control.next {
+    right: 1.5rem;
+}
+
+.carousel-icon {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+.ico{
+    padding-left: 150px;
+    padding-right: 10px;
+    width: 1.8em;
+    height: 1.8em;
+    
+
+}
+
+.ico--2{
+    list-style: none;
+    display: flex;
+    padding-top: 50px;
+    gap: 20px;
+    flex-direction: row;
+    justify-content:center;
+}
+
+.ico--2 svg{
+    width: 3em;
+    height: 3em;
+    
+}
+
+
+/*1er seccion*/
+
+.first-section{
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #000;
+    color: #fff;
+}
+
+.first-section h2{
+    padding-top: 30px;
+    font-size: 39px;
+}
+
+.container-img-text h3{
+    font-size: 20px;
+}
+
+.container-img-text img{
+    width:600px;
+    height:300px;
+}
+
+.container-img-text {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.bloque-texto{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 50%;
+}
+
+.s-p{
+    padding-top: 30px;
+    font-size: 19px;
+}
+
+.lg-p{
+    padding-top: 50px;
+    font-size: 30px;
+}
+
+
+
+/*2da seccion*/
+
+.second-section{
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.second-section h2{
+    padding-top: 30px;
+    font-size: 34px;
+}
+
+.second-section p{
+    padding-top: 30px;
+    font-size: 22px;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+.container-img-acordeon{
+    display: flex;
+    padding-top: 70px;
+    margin: auto;
+    justify-content: center;
+}
+
+.accionador-acordeon{
+    background-color: #756666a1;
+    color: #444;
+    cursor:pointer;
+    padding:18px;
+    width: 100%;
+    border:none;
+    text-align: left;
+    outline:none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+.panel{
+    padding: 0 18px;
+    display: none;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.active, .accionador-acordeon:hover{
+    background-color: #ccc;
+}
+
+/*3era seccion*/
+
+.third-section{
+    padding-top:10px;
+    text-align: center;
+    background-color: #aaa;
+    color:#fff;
+    display: center;
+}
+
+.third-section h2{
+    padding-top: 30px;
+    font-size: 34px;
+}
+
+.third-section p{
+    padding-top: 30px;
+    font-size: 22px;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+.card-container{
+    width: 100%;
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.cards{
+    display:flex; 
+    width: 450px;
+    height: 450px;
+    margin-bottom: 150px;
+    border-radius: 10px;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    color:black;
+}
+
+
+.cards h2{
+
+    padding-bottom: 50px;
+
+}
+
+.cards ul{   
+    list-style: none;
+    width: 100%;
+}
+
+.cards li{
+    font-size: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #aaa;
+}
+
+.cards li:last-child{
+    border-bottom: none;
+}
+
+.cards li:first-child {
+    border-top: 1px solid #aaa;
+}
+
+
+.button-card{
+    padding-top: 30px;
+    width: 100%;
+    border-top: 1px solid #aaa;
+}
+
+.btn{
+    border-radius: 5px;
+    width: 150px;
+    height: 50px;
+    font-size: 20px;
+    background-color: #fff;
+    color: #000;
+}
+
+/*Pie de pagina*/
+.foot{
+    font-size: 18px;
+    padding: 50px;
+    text-align:center;
+    color:#fff;
+    background-color: #000;
+}
